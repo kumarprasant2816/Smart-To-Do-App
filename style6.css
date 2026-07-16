@@ -1,0 +1,460 @@
+/* ===========================
+   Reset
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* ===========================
+   Body
+=========================== */
+
+body{
+
+    background:#0c3977;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:100vh;
+
+    padding:20px;
+
+}
+
+/* ===========================
+   Container
+=========================== */
+
+.container{
+
+    width:700px;
+
+    background:rgb(238, 213, 213);
+
+    padding:25px;
+
+    border-radius:10px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+
+}
+
+/* ===========================
+   Heading
+=========================== */
+
+h1{
+
+    text-align:center;
+
+    color:#333;
+
+    margin-bottom:20px;
+
+}
+
+/* ===========================
+   Input Section
+=========================== */
+
+.input-box{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:12px;
+
+    margin-bottom:20px;
+
+}
+
+.input-box input,
+.input-box select{
+
+    padding:10px;
+
+    border:1px solid #ccc;
+
+    border-radius:5px;
+
+    font-size:15px;
+
+}
+
+.input-box input:focus,
+.input-box select:focus{
+
+    border-color:#007bff;
+
+    outline:none;
+
+}
+
+/* ===========================
+   Add Button
+=========================== */
+
+#addBtn{
+
+    grid-column:span 2;
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:5px;
+
+    background:#007bff;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+}
+
+#addBtn:hover{
+
+    background:#0056b3;
+
+}
+
+/* ===========================
+   Search
+=========================== */
+
+#search{
+
+    width:100%;
+
+    padding:10px;
+
+    margin-bottom:15px;
+
+    border:1px solid #ccc;
+
+    border-radius:5px;
+
+}
+
+/* ===========================
+   Filter Buttons
+=========================== */
+
+.filter{
+
+    display:flex;
+
+    gap:10px;
+
+    margin-bottom:20px;
+
+}
+
+.filter button{
+
+    flex:1;
+
+    padding:10px;
+
+    border:none;
+
+    border-radius:5px;
+
+    cursor:pointer;
+
+    background:#6c757d;
+
+    color:white;
+
+}
+
+.filter button:hover{
+
+    background:#495057;
+
+}
+
+/* ===========================
+   Counter
+=========================== */
+
+.counter{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    background:#f8f9fa;
+
+    padding:12px;
+
+    border-radius:5px;
+
+    margin-bottom:20px;
+
+}
+
+.counter span{
+
+    color:#007bff;
+
+    font-weight:bold;
+
+}
+
+/* ===========================
+   Task List
+=========================== */
+
+#taskList{
+
+    list-style:none;
+
+}
+
+/* Task Card */
+
+.task{
+ 
+    background:#fafafa;
+
+    border-left:6px solid #007bff;
+
+    padding:15px;
+
+    margin-bottom:15px;
+
+    border-radius:8px;
+
+    transition:.3s;
+
+}
+
+.task:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 5px 12px rgba(0,0,0,.15);
+
+}
+
+/* Task Heading */
+
+.task h3{
+
+    color:#333;
+
+    margin-bottom:8px;
+
+}
+
+.task p{
+
+    margin:4px 0;
+
+    color:#666;
+
+}
+
+/* ===========================
+   Priority Colors
+=========================== */
+
+.high{
+
+    border-left-color:#dc3545;
+
+}
+
+.medium{
+
+    border-left-color:#ffc107;
+
+}
+
+.low{
+
+    border-left-color:#28a745;
+
+}
+
+/* ===========================
+   Completed Task
+=========================== */
+
+.completed{
+
+    background:#d4edda;
+
+    text-decoration:line-through;
+
+    opacity:.8;
+
+}
+
+/* ===========================
+   Task Buttons
+=========================== */
+
+.task-buttons{
+
+    margin-top:12px;
+
+}
+
+.task-buttons button{
+
+    padding:8px 12px;
+
+    margin-right:8px;
+
+    border:none;
+
+    border-radius:5px;
+
+    cursor:pointer;
+
+}
+
+/* Complete */
+
+.complete{
+
+    background:#28a745;
+
+    color:white;
+
+}
+
+/* Edit */
+
+.edit{
+
+    background:#ffc107;
+
+}
+
+/* Delete */
+
+.delete{
+
+    background:#dc3545;
+
+    color:white;
+
+}
+
+.complete:hover{
+
+    background:#218838;
+
+}
+
+.edit:hover{
+
+    background:#e0a800;
+
+}
+
+.delete:hover{
+
+    background:#c82333;
+
+}
+
+/* ===========================
+   Reset Button
+=========================== */
+
+#resetBtn{
+
+    width:100%;
+
+    padding:12px;
+
+    margin-top:15px;
+
+    border:none;
+
+    border-radius:5px;
+
+    background:#343a40;
+
+    color:white;
+
+    cursor:pointer;
+
+}
+
+#resetBtn:hover{
+
+    background:#212529;
+
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:768px){
+
+.container{
+
+    width:100%;
+
+}
+
+.input-box{
+
+    grid-template-columns:1fr;
+
+}
+
+#addBtn{
+
+    grid-column:span 1;
+
+}
+
+.counter{
+
+    flex-direction:column;
+
+    gap:10px;
+
+}
+
+.filter{
+
+    flex-direction:column;
+
+}
+
+.task-buttons{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+}
+
+.task-buttons button{
+
+    width:100%;
+
+}
+
+}
